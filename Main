@@ -1,0 +1,51 @@
+public class Main {
+    public static void main(String[] args) {
+        Lisans ogrenci1 =new Lisans();
+        Dersler Logrenci1[];
+        Dersler kümülatif=new Dersler();
+        Logrenci1 =new Dersler[50];
+        Dersler ders1=new Dersler("1007","Cebir",5,80);
+        Dersler ders2=new Dersler("2002","NTP",8,65);
+        ogrenci1.setIsim_Soyisim("Enes İşler");
+        ogrenci1.setBolum("Bilgisayar Bilimleri");
+        ogrenci1.setId(2017280059);
+        ogrenci1.ShowInfos();
+        System.out.println("Ders Bilgileri");
+        ders1.ShowInfos();
+        ders2.ShowInfos();
+        kümülatif.KümülatifHesap();
+        ders2.KümülatifHesap();
+        System.out.println("...........................................................");
+        YuksekLisans ogrenci2=new YuksekLisans();
+        Dersler Yogrenci1[];
+        Yogrenci1=new Dersler[50];
+        Dersler Yders1=new Dersler("1107","İnternet Hukuku",8,70);
+        Dersler Yders2=new Dersler("1108","Hukuk Devleti",7,90);
+        ogrenci2.setIsim_Soyisim("Emre İşler");
+        ogrenci2.setBolum("Bilişim Hukuku");
+        ogrenci2.setId(2017280060);
+        ogrenci2.setLisans_Okulu("İstanbul Üniversitesi");
+        ogrenci2.setLisans_Bolumu("Hukuk");
+        ogrenci2.ShowInfos();
+        System.out.println("Ders Bilgileri...");
+        Yders1.ShowInfos();
+        Yders2.ShowInfos();
+        System.out.println("...........................................................");
+        Doktora ogrenci3=new Doktora();
+        Dersler Dogrenci1[];
+        Dogrenci1=new Dersler[50];
+        Dersler Dders1=new Dersler("6094","Doktora Seminer",5,70);
+        Dersler Dders2=new Dersler("6098","Doktora Uzmanlık Alanı",9,90);
+        ogrenci3.setIsim_Soyisim("Eren İşler");
+        ogrenci3.setBolum("Bilgisayar Mühendisliği");
+        ogrenci3.setId(2017280061);
+        ogrenci3.setLisans_Bolumu("Bilgisayar Bilimleri");
+        ogrenci3.setLisans_Okulu("Dokuz Eylül Üniversitesi");
+        ogrenci3.setYuksek_Bolumu("Endüstrü Mühendisliği");
+        ogrenci3.setYuksek_Okulu("Dokuz Eylül Üniversitesi");
+        ogrenci3.ShowInfos();
+        System.out.println("Ders Bilgileri...");
+        Dders1.ShowInfos();
+        Dders2.ShowInfos();
+    }
+}
